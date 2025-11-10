@@ -1,21 +1,26 @@
-make a perfect proftlio with this html <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Vaishnavi Natarajan – Aspiring Data Analyst and AI Enthusiast from Chennai, India." />
-  <title>Vaishnavi Natarajan | Data Engineering  Enthusiast</title>
+  <title>Vaishnavi Natarajan | Data Engineering Enthusiast</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
   <header class="site-header" id="home">
     <nav class="nav container">
       <a href="#home" class="logo">VN</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -26,11 +31,11 @@ make a perfect proftlio with this html <!DOCTYPE html>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    
+
     <section class="hero container section" data-animate>
       <div class="hero-text">
         <h1 class="name">Vaishnavi Natarajan</h1>
-        <p class="tagline">Aspiring Data Engineering | Python | SQL | AI | Machine Learning | Azure Data Engineering</p>
+        <p class="tagline">Aspiring Data Engineer | Python | SQL | AI | Machine Learning | Azure Data Engineering</p>
         <div class="hero-cta">
           <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
           <a class="btn outline" href="https://github.com/vaishnavi-vais" target="_blank" rel="noopener">View GitHub Projects</a>
@@ -56,66 +61,44 @@ make a perfect proftlio with this html <!DOCTYPE html>
     </section>
   </header>
 
-  <main>
+  <main id="main">
     <section id="about" class="container section" data-animate>
       <h2>About Me</h2>
-      <p>I’m an aspiring Data Engineer with a strong foundation in Python, SQL, and Machine Learning. Passionate about transforming raw data into actionable insights, I love building end-to-end analytics solutions and exploring the intersection of data, AI, and automation.</p>
+      <p>I’m an aspiring Data Analyst with a strong foundation in Python, SQL, and Machine Learning. Passionate about transforming raw data into actionable insights, I love building end-to-end analytics solutions and exploring the intersection of data, AI, and automation.</p>
     </section>
 
-    <section style="font-family: 'Poppins', sans-serif; color: #1a1a1a;">
-       <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 20px;">Education</h2>
-
-           <section style="font-family: 'Poppins', sans-serif; color: #1a1a1a; padding-top: 20px;">
-
-  <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 25px;">Education</h2>
-
-  <div style="display: flex; flex-direction: column; gap: 25px;">
-
-    <!-- College -->
-      <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 20px;">
-        <div>
-        <h3 style="margin: 0; font-weight: 600;">Velammal Institute of Technology</h3>
-        <p style="margin: 2px 0; font-weight: 500;">B.E Electrical & Electronics Engineering</p>
-        <p style="margin: 2px 0;">June 2021 – May 2025</p>
-        <ul style="margin: 5px 0; padding-left: 18px; color: #555;">
-          <li>CGPA: 8.32</li>
-          <li>Affiliated to Anna University</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Class XII -->
-     <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 20px;">
-      <div>
-        <h3 style="margin: 0; font-weight: 600;">MGR Adarsh Senior Secondary School</h3>
-        <p style="margin: 2px 0; font-weight: 500;">HSC (Class XII)</p>
-        <p style="margin: 2px 0;">June 2020 – May 2021</p>
-        <ul style="margin: 5px 0; padding-left: 18px; color: #555;">
-          <li>Percentage: 87%</li>
-          <li>CBSE Board</li>
-        </ul>
-        </div>
-        </div>
-
-          <!-- Class X -->
-            <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 20px;">
-          <div>
-        <h3 style="margin: 0; font-weight: 600;">Lalchand Milachand Dhadhadh Senior Secondary School</h3>
-        <p style="margin: 2px 0; font-weight: 500;">SSLC (Class X)</p>
-        <p style="margin: 2px 0;">June 2018 – May 2019</p>
-        <ul style="margin: 5px 0; padding-left: 18px; color: #555;">
-          <li>Percentage: 82%</li>
-            <li>State Board</li>
-          </ul>
-           </div>
+    <section id="education" class="container section" data-animate>
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <div class="edu-item">
+            <img class="edu-logo" src="velammal.jpeg" alt="Velammal Institute of Technology logo" loading="lazy" />
+            <div>
+              <h3>B.E. Electrical & Electronics Engineering</h3>
+              <p>Velammal Institute of Technology (2021–2025) – CGPA: 8.32</p>
+            </div>
           </div>
-
-             </div>
-
-             </section>
-
-
-
+        </li>
+        <li>
+          <div class="edu-item">
+            <img class="edu-logo" src="images.jpeg" alt="MGR Adarsh Senior Secondary School logo" loading="lazy" />
+            <div>
+              <h3>Class XII – 87%</h3>
+              <p>MGR Adarsh Senior Secondary School (2021)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="edu-item">
+            <img class="edu-logo" src="ladhadha.png" alt="Lalchand Milachand Dhadha Senior Secondary School logo" loading="lazy" />
+            <div>
+              <h3>Class X – 82%</h3>
+              <p>Lalchand Milachand Dhadha Senior Secondary School (2019)</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
     <section id="skills" class="container section" data-animate>
       <h2>Technical Skills</h2>
@@ -125,8 +108,8 @@ make a perfect proftlio with this html <!DOCTYPE html>
           <ul>
             <li>Excel</li>
             <li>Power BI</li>
+            <li>Tableau</li>
             <li>SQL</li>
-            <li>JSON AND CSV</li>
           </ul>
         </div>
         <div class="skill-card">
@@ -134,7 +117,7 @@ make a perfect proftlio with this html <!DOCTYPE html>
           <ul>
             <li>Python (pandas, NumPy, matplotlib)</li>
             <li>C</li>
-             <li>C#</li>
+            <li>C#</li>
           </ul>
         </div>
         <div class="skill-card">
@@ -166,7 +149,6 @@ make a perfect proftlio with this html <!DOCTYPE html>
           <h3>Cloud</h3>
           <ul>
             <li>Azure</li>
-
           </ul>
         </div>
       </div>
@@ -177,11 +159,11 @@ make a perfect proftlio with this html <!DOCTYPE html>
       <ul class="list">
         <li>SQL Fundamentals – SkillRack</li>
         <li>Data Everywhere – Coursera</li>
-        <li>Google Data analytics – Coursera</li>
         <li>Prepare Data for Exploration – Coursera</li>
         <li>Machine Learning Pipelines with Azure ML Studio – Coursera</li>
         <li>Cloud Computing – Great Learning</li>
         <li>Introduction to LLMs – Google Cloud</li>
+        <li>Web Development Training – Yaar Technologies</li>
       </ul>
     </section>
 
@@ -189,36 +171,35 @@ make a perfect proftlio with this html <!DOCTYPE html>
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
-  <h3>⚡ Transmission Fault Prediction System 🔍</h3>
-<p>🤖 Developed a Machine Learning model using voltage & current sensor data, boosting fault prediction accuracy from <strong>42% → 81.8%</strong>.</p>
-<p>🏆 Recognized as the <strong>Best Paper Award</strong> at an <strong>IEEE International Conference</strong>.</p>
-  <p class="meta">🧠 Tools: Python | Scikit-learn | Pandas | Random Forest | Decision Tree</p>
-</article>
-
-<article class="card">
-  <h3>☁️ Data Lake Deployment with Azure & PySpark 🔧</h3>
-  <p>🚀 Built a scalable ETL pipeline using <strong>Azure Data Lake Gen2</strong> & <strong>Synapse Spark</strong> (Raw → Silver → Gold) for e-commerce data.  
-  ⚙️ Performed data cleaning, deduplication & KPI generation using <strong>PySpark</strong> and <strong>SQL</strong> for fast analytics.</p>
-  <p class="meta">💾 Tools: Azure | PySpark | SQL</p>
-</article>
-        
-<a href="https://vaishnavi-vais.github.io/medical_check/" target="_blank" style="text-decoration: none; color: inherit;">
-  <article class="card">
-    <h3>🩺 Whisper Speech-to-Text Medical Bot 🤖</h3>
-    <p>🌍 Developed a multilingual chatbot using <strong>OpenAI Whisper</strong> & <strong>Gradio</strong> for real-time speech-to-text conversion and intelligent health-related query handling.</p> 
-    <p>💬 Click here to view and raise your queries </p>
-    <p class="meta">🧠 Tools: Whisper | Python | Gradio</p>  
-  </article>
-</a>
- </div>
+          <h3>⚡ Transmission Fault Prediction System</h3>
+          <p>Machine Learning model using voltage and current sensor data; improved accuracy from 42% → 81.8%.</p>
+          <p class="meta">Tools: Python, scikit-learn, pandas</p>
+          <div class="badges"><span class="badge">🏆 IEEE Conference Paper (College)</span></div>
+        </article>
+        <article class="card">
+          <h3>☁️ Data Lake Deployment with Azure & PySpark</h3>
+          <p>Built scalable data pipelines on Azure Data Lake integrated with SQL and PySpark for analytics.</p>
+          <p class="meta">Tools: Azure, PySpark, SQL</p>
+        </article>
+        <article class="card">
+          <h3>🩺 Whisper Speech-to-Text Medical Bot</h3>
+          <p>Developed multilingual chatbot using OpenAI Whisper & Gradio for real-time speech-to-text conversion.</p>
+          <p class="meta">Tools: Whisper, Python, Gradio</p>
+          <p>
+            Chat here with MediBot to get your answer:
+            <a class="btn outline" href="https://vaishnavi-vais.github.io/medical_check/" target="_blank" rel="noopener">Open MediBot</a>
+          </p>
+        </article>
+      </div>
     </section>
+
     <section id="experience" class="container section" data-animate>
       <h2>Experience</h2>
       <div class="experience">
         <div class="exp-item">
-          <h3>Open Source Contribution, Algonex Technologies</h3>
+          <h3>Open Source contribution, Algonex Technologies</h3>
           <p class="meta">Oct–Sept 2025</p>
-          <p>Developed an AI-powered FAQ Chatbot using Python with dynamic query handling, and used React for the front-end UI.</p>
+          <p>Built an AI-powered FAQ chatbot using Python and NLP for dynamic query handling.</p>
         </div>
         <div class="exp-item">
           <h3>.NET Intern, Hexaware Technologies</h3>
@@ -234,8 +215,11 @@ make a perfect proftlio with this html <!DOCTYPE html>
         <li>GenAI Workshop (IIT) – Built Jira automation bot using REST APIs and Python.</li>
         <li>GenAI Learnathon – Trained Rock-Paper-Scissors model with Generative AI.</li>
         <li>Azure OpenAI Chatbot – Deployed LLM-based chatbot integrating Azure AI.</li>
-        <li>Ai &Cloud Conference 2025 -Learned fine-tuning LLMs with weights & biases + built a RAG model for domain-specific responses.</li>
-        <li>Introduction to pyspark (w3school)- learnt to write scripts and perform distributed data processing.</li>
+        <li>Fireworks AI Fine-Tuning – Fine-tuned DeepSeek Distill Llama 70B using LoRA.</li>
+        <li>Azure OpenAI Chatbot (Infosys Springboard) – Built and deployed an LLM-based chatbot integrating Azure AI and prompt engineering.</li>
+        <li>AI & Cloud Conference 2025 – Learned fine-tuning LLMs with Weights & Biases and built a RAG model for domain-specific responses.</li>
+        <li>AI-driven automation in data pipelines – Modernized ETL workflows using tools like Airflow, Spark, and AWS Glue.</li>
+        <li>Introduction to PySpark (W3Schools) – Wrote scripts and performed distributed data processing.</li>
       </ul>
     </section>
 
@@ -280,5 +264,5 @@ make a perfect proftlio with this html <!DOCTYPE html>
   <script src="script.js"></script>
 </body>
 </html>
-    
+
 
